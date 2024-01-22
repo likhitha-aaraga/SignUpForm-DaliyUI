@@ -22,6 +22,9 @@ p {
 .main__container {
     width: auto;
     height: 100vh;
+}
+
+.sub__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +81,7 @@ p {
 @media (min-width: 768px) {
     .main__container {
         background-image: url("./images/background-image.avif");
-        height: 150vh;
+        height: 100%;
     }
     .sub__container__left > img {
         width: 430px;
@@ -91,8 +94,10 @@ p {
 @media (min-width: 1024px) {
     .main__container {
         background-image: url("./images/background-image.avif");
-        flex-direction: row;
         height: 100vh;
+    }
+    .sub__container {
+        flex-direction: row;
     }
     .sub__container__left > img {
         margin-bottom: 1rem;
